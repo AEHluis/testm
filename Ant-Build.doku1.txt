@@ -1,0 +1,30 @@
+root@meinpc:/opt/hello-world-ant-with-ivy# ant
+Buildfile: /opt/hello-world-ant-with-ivy/build.xml
+
+resolve:
+[ivy:retrieve] :: Apache Ivy 2.5.0 - 20191020104435 :: https://ant.apache.org/ivy/ ::
+[ivy:retrieve] :: loading settings :: url = jar:file:/usr/share/ant/lib/ivy-2.5.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[ivy:retrieve] :: resolving dependencies :: org.apache#hello-ivy;working@nb225aeh
+[ivy:retrieve] 	confs: [default]
+[ivy:retrieve] 	found commons-lang#commons-lang;2.0 in public
+[ivy:retrieve] 	found junit#junit;3.7 in public
+[ivy:retrieve] 	found commons-cli#commons-cli;1.0 in public
+[ivy:retrieve] 	found commons-logging#commons-logging;1.0 in public
+[ivy:retrieve] :: resolution report :: resolve 102ms :: artifacts dl 13ms
+[ivy:retrieve] 	:: evicted modules:
+[ivy:retrieve] 	commons-lang#commons-lang;1.0 by [commons-lang#commons-lang;2.0] in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   5   |   0   |   0   |   1   ||   8   |   0   |
+	---------------------------------------------------------------------
+[ivy:retrieve] :: retrieving :: org.apache#hello-ivy
+[ivy:retrieve] 	confs: [default]
+[ivy:retrieve] 	0 artifacts copied, 8 already retrieved (0kB/3ms)
+
+run:
+     [java] Hallo ich ich das JavaProgramm
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

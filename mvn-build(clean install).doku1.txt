@@ -1,0 +1,62 @@
+ mvn clean install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building helloworldmaven 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ helloworldmaven ---
+[INFO] Deleting /opt/hello-world-ant-with-ivy/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ helloworldmaven ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /opt/hello-world-ant-with-ivy/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ helloworldmaven ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /opt/hello-world-ant-with-ivy/target/classes
+[parsing started RegularFileObject[/opt/hello-world-ant-with-ivy/src/martina/Hello.java]]
+[parsing completed 10ms]
+[search path for source files: /opt/hello-world-ant-with-ivy/src/martina,/opt/hello-world-ant-with-ivy/target/generated-sources/annotations]
+[search path for class files: /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar,/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar,/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar,/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar,/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar,/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar,/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar,/usr/lib/jvm/java-8-oracle/jre/classes,/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunjce_provider.jar,/usr/lib/jvm/java-8-oracle/jre/lib/ext/jfxrt.jar,/usr/lib/jvm/java-8-oracle/jre/lib/ext/dnsns.jar,/usr/lib/jvm/java-8-oracle/jre/lib/ext/jaccess.jar,/usr/lib/jvm/java-8-oracle/jre/lib/ext/zipfs.jar,/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunpkcs11.jar,/usr/lib/jvm/java-8-oracle/jre/lib/ext/nashorn.jar,/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunec.jar,/usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar,/usr/lib/jvm/java-8-oracle/jre/lib/ext/cldrdata.jar,/opt/hello-world-ant-with-ivy/target/classes,.]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/lang/Object.class)]]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/lang/String.class)]]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/lang/Exception.class)]]
+[checking martina.Hello]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/io/Serializable.class)]]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/lang/AutoCloseable.class)]]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/lang/Throwable.class)]]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/lang/System.class)]]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/io/PrintStream.class)]]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/lang/Appendable.class)]]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/io/Closeable.class)]]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/io/FilterOutputStream.class)]]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/io/OutputStream.class)]]
+[loading ZipFileIndexFileObject[/usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/io/Flushable.class)]]
+[wrote RegularFileObject[/opt/hello-world-ant-with-ivy/target/classes/martina/Hello.class]]
+[total 119ms]
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ helloworldmaven ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /opt/hello-world-ant-with-ivy/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ helloworldmaven ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ helloworldmaven ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ helloworldmaven ---
+[INFO] Building jar: /opt/hello-world-ant-with-ivy/target/helloworldmaven-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ helloworldmaven ---
+[INFO] Installing /opt/hello-world-ant-with-ivy/target/helloworldmaven-1.0-SNAPSHOT.jar to /root/.m2/repository/de/martina/helloworld/helloworldmaven/1.0-SNAPSHOT/helloworldmaven-1.0-SNAPSHOT.jar
+[INFO] Installing /opt/hello-world-ant-with-ivy/pom.xml to /root/.m2/repository/de/martina/helloworld/helloworldmaven/1.0-SNAPSHOT/helloworldmaven-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.966 s
+[INFO] Finished at: 2019-12-06T12:17:06+01:00
+[INFO] Final Memory: 18M/296M
+[INFO] ------------------------------------------------------------------------
