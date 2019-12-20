@@ -11,6 +11,22 @@
 
 	<name>helloworldmaven</name>
 
+<distributionManagement>
+  <repository>
+    <id>packagecloud-travis</id>
+    <url>
+      packagecloud+https://packagecloud.io/AlexLuis/testm
+    </url>
+  </repository>
+  <snapshotRepository>
+    <id>packagecloud-travis</id>
+    <url>
+      packagecloud+https://packagecloud.io/AlexLuis/testm
+    </url>
+  </snapshotRepository>
+</distributionManagement>
+
+
 
 	<dependencies>
 		<dependency>
@@ -47,5 +63,12 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
+<extensions>
+    <extension>
+      <groupId>io.packagecloud.maven.wagon</groupId>
+      <artifactId>maven-packagecloud-wagon</artifactId>
+      <version>0.0.4</version>
+    </extension>
+  </extensions>
 	</build>
 </project>
